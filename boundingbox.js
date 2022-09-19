@@ -1,11 +1,11 @@
 class BoundingBox {
-    constructor(x, y, width, height) {
-        Object.assign(this, { x, y, width, height });
+    constructor(backLeft, backRight, frontLeft, frontRight) {
+        Object.assign(this, { backLeft, backRight, frontLeft, frontRight });
 
-        this.left = x;
-        this.top = y;
-        this.right = this.left + this.width;
-        this.bottom = this.top + this.height;
+        // this.left = x;
+        // this.top = y;
+        // this.right = this.left + this.width;
+        // this.bottom = this.top + this.height;
     };
 
     collide(oth) {

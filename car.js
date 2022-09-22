@@ -100,7 +100,7 @@ class Car {
         ctx.translate(this.x,this.y);
         ctx.rotate(this.rotation*Math.PI/180);     
         ctx.translate(-this.WIDTH/2, -this.HEIGHT/2);
-
+        ctx.fillStyle = 'Blue';
         ctx.fillRect(0,0,this.WIDTH,this.HEIGHT);
 
 
